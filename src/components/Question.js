@@ -22,7 +22,7 @@ class Question extends Component {
                         <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionOne') : ()=>{}}>{question.optionOne.text}</div>
                         { answer === 'Option One' &&
                             <React.Fragment>
-                                <Progress size="small" percent={percentage} /> 
+                                <div>Percentage: {`${percentage}%`}</div>
                                 <div>Total Votes: {answerNoOfVotes}</div>
                             </React.Fragment>
                         }
@@ -31,7 +31,7 @@ class Question extends Component {
                         <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionTwo') : ()=>{}}>{question.optionTwo.text}</div>
                         { answer === 'Option Two' &&
                             <React.Fragment>
-                                <Progress size="small" percent={percentage} /> 
+                                <div>Percentage: {`${percentage}%`}</div>
                                 <div>Total Votes: {answerNoOfVotes}</div>
                             </React.Fragment>
                         }

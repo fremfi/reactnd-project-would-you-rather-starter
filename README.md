@@ -1,6 +1,9 @@
 # Would You Rather
 
-This is a simple react application that allows you to search & add books, then categorize them into currently reading, want to read and read.
+This is a simple react application that allows you to;
+- Create a poll
+- Answer a poll and view the percentage of people that chose the same answer as you
+- View the leader board (The more polls and answers you have, the higher your rank is)
 
 ### Prerequisites
 ```

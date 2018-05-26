@@ -39,7 +39,7 @@ class App extends Component {
               style={{ lineHeight: '64px' }}
             >
               <Menu.Item key="/"><Link to="/">Home</Link></Menu.Item>
-              <Menu.Item key="/leaders-board"><Link to="/leaders-board">Leaders Board</Link></Menu.Item>
+              <Menu.Item key="/leadersboard"><Link to="/leadersboard">Leaders Board</Link></Menu.Item>
               <Menu.Item key="/add"><Link to="/add">Create Poll</Link></Menu.Item>
             </Menu>
           </Header>
@@ -47,7 +47,7 @@ class App extends Component {
                 <Route path="/login" component={Login} />
                 <React.Fragment>
                   <Route exact path="/" component={requireAuth(Dashboard)} />
-                  <Route path="/leaders-board" component={LeadersBoard} />
+                  <Route path="/leadersboard" component={LeadersBoard} />
                   <Route path="/add" component={requireAuth(CreatePoll)} />
                   <Route path="/questions/:id" component={requireAuth(Question)} />
                   <Route path="/404" component={NotFoundPage} />
